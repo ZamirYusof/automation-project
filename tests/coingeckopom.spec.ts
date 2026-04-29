@@ -32,4 +32,5 @@ test('CoinGecko Converter flow', async ({ page }) => {
     //npx playwright test tests/coingeckopom.spec.ts --project=chromium --workers=1 --debug
     //npx playwright test tests/coingeckopom.spec.ts --project=chromium
     //npx playwright show-report
+    //test branch
 });
