@@ -9,5 +9,10 @@
     "forceConsistentCasingInFileNames": true,
     "types": [ "@playwright/test" ]
   },
-  "include": [ "tests/**/*.ts", "src/**/*.ts", "playwright.config.ts" ]
+  "include": [
+    "tests/**/*.ts",
+    "src/**/*.ts",
+    "pages/**/*.ts",
+    "playwright.config.ts"
+  ]
 }
