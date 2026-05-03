@@ -30,3 +30,12 @@ jobs:
 
       - name: Run Playwright-CoinGecko tests
         run: npx playwright test tests/coingeckopom.spec.ts --project=chromium --workers=1
+
+  # Meta job that depends on all matrix jobs
+  all-tests:
+    name: All Playwright Tests Summary
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: All checks passed
+        run: echo "All Playwright matrix jobs completed successfully"
